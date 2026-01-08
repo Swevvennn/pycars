@@ -48,9 +48,13 @@ class Pycars:
         self.score = 0
         self.acceleration = 1
         #Mise à jour du meilleur score
-        f = open('score.txt','r')
-        self.best = f.read()
-        f.close()
+        try:
+            with open('score.txt','r') as f:
+                self.best = f.read()
+        except FileNotFoundError:
+            with open('score.txt', 'w') as f:
+                f.write("0")
+                self.best = 0
         #Création des polices pour le texte
         self.Tfont = pygame.font.SysFont('ArialBlack', 100)
         #Création des variables pour le score et le menu
