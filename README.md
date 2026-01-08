@@ -34,4 +34,4 @@ Au delà de 3 ou 4 voitures en plus du joueur, le jeu subit un ralentissement.
 
 ## Contact me : 
 * __Discord__ : swevvenn
-* __Mail__ : osmondmaxence@gmail.com
+* __Mail__ : swevvenn@proton.me
